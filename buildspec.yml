@@ -1,0 +1,16 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.13
+  build:
+    commands:
+      - echo "Nothing to build, just packaging..."
+artifacts:
+  files:
+    - application.py
+    - requirements.txt
+    - templates/**
+    - src/**
+    - .ebextensions/**
